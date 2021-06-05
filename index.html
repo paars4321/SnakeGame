@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- welcome -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Indie+Flower&display=swap" rel="stylesheet">
+
+<!-- level -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+
+
+<script src="https://kit.fontawesome.com/c7e125b7a3.js" crossorigin="anonymous"></script>
+
+
+    <title>SakeGame</title>
+
+    <link rel="stylesheet" href="mysnake.css">
+</head>
+<body>
+    <div id="first">
+        <div id="welcome">Welcome To SnakeGame !</div>
+        <div id="play" <button  onclick="dis_none()"><i class="far fa-play-circle"></i> Play Now! </button></div>
+        <div id="level1" onclick="level1()">Level 1: Basics</div>
+        <div id="level2" onclick="level2()">Level 2: Intermediate</div>
+        <div id="level3" onclick="level3()">Level 3: Advanced</div>
+        
+    </div>
+
+    <div id="gaming_display">
+        
+        <div id="score">Score: 0</div>
+        <div id="board">
+           
+        </div>
+
+        <div id="start" onclick="start_the_game()">
+            START!!
+        </div>
+    </div>
+</body>
+<script src="mysnake.js"></script>
+</html>

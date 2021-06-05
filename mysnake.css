@@ -1,0 +1,161 @@
+#first{
+    display: block;
+    width: 100%;
+    height: 750px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.514),rgba(0,0,0,0.363),rgba(0,0,0,0.452)),url('./snakebg1.jpg');
+    background-position: center center;
+    background-size: cover;
+
+
+
+    
+}
+
+#welcome{
+    position: relative;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 420px; 
+    /* height: 70px; */
+    font-size: 1.9rem;
+    
+    color: #fff81b;
+
+    font-family: 'Alfa Slab One', cursive;
+}
+
+ #play{
+    position: relative;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #261717;
+    height: 50px;
+    width: 250px;
+    border-radius: 17px;
+    background-color: #2ad15e;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 13px;
+
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Boogaloo', cursive;
+}
+
+#level1,#level2,#level3{
+    position: relative;
+    display: block;
+    top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+    border: 4px solid #431e25;
+    height: 45px;
+    width: 220px;
+    background-color: rgb(190 175 227);
+    padding-left: 30px;
+    padding-top: 8px;
+    font-size: 1.7rem;
+    border-radius: 16px;
+    cursor: pointer;
+
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Boogaloo', cursive;
+}
+#level1{
+    background-color: yellow;
+}
+
+
+
+/*//////////////////////////////////////// 2dn page starting here ///////////////////////////////////////////////////*/
+
+#gaming_display{
+
+    /* display: block; */
+    width: 100%;
+    height: 770px;
+    background-image: /*linear-gradient(to right,rgba(0,0,0,0.514),rgba(0,0,0,0.363),rgba(0,0,0,0.452)),*/url('./snakebg2.jpg');
+    background-position: center center;
+    background-size: cover;
+    
+    display: none;
+}
+
+#board{
+    position: relative;
+    top:10%;
+    margin: auto;
+    width: 86vmin;
+    height: 87vmin;
+    border: 4px solid rgb(46, 14, 134);
+    /* background-color: blue; */
+    background: linear-gradient(rgb(206 179 211), rgb(244 244 146 / 96%));
+
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+
+    /* box-shadow: 2px 0px red; */
+}
+
+#score{
+    /* position: absolute; */
+    position: absolute;
+    /* margin-left:92% ; */
+    width: 200px;
+    top: 59px;
+    right: 100px;
+    /* border: 2px solid red; */
+    font-size: 2rem;
+    font-family: 'Boogaloo', cursive;
+
+    /* animation: blink-animation 1s infinite; */
+}
+/* @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+} */
+#start{
+    position: absolute;
+    height: 38px;
+    padding-top: 6px;
+    width: 130px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    background-color: #157f58;
+    top: 50%;
+    left: 46.3%;
+    cursor: pointer;
+    border: 3px solid black;
+    
+}
+
+.head{
+    border: 2px solid rgb(26, 11, 11);
+    background: linear-gradient( rgb(167, 23, 23),rgb(240, 29, 29),rgb(160, 28, 35) );
+    border-radius: 12px;
+}
+
+.tail{
+    
+    border: 2px solid rgb(26, 11, 11);
+    background: linear-gradient( rgb(167, 23, 23),pink,rgb(161, 41, 41),orange,rgb(209, 34, 42) );
+    border-radius: 18px;
+}
+
+.food{
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color:rgb(28, 85, 11) ;
+}
