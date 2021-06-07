@@ -160,6 +160,8 @@ function gameEngine()
       }
       else
       {
+         bx=0;
+         by=0;
       currentDirection.x=0;
       currentDirection.y=0;
       }
