@@ -18,7 +18,7 @@ function dis_none()
 
   
 }
-let setspeed=3;
+let setspeed=5;
 function level1()
 {
    document.getElementById('level1').style.backgroundColor='yellow';
@@ -46,7 +46,42 @@ function level3()
    clickSound.play()
 }
 
+
+let bx=1,by=0,f=0;
+function up()
+{
+   f=1;
+   moveSound.play()
+  bx=0;
+  by=-1;
+}
+
+function down()
+{
+   f=1;
+   moveSound.play()
+  bx=0;
+  by=1;
+}
+
+function left()
+{
+   f=1;
+   moveSound.play()
+   bx=-1;
+   by=0;
+}
+
+function right()
+{
+   f=1;
+   moveSound.play()
+   bx=1;
+   by=0;
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
+
 
 function start_the_game()
 {
@@ -61,6 +96,7 @@ let snakeIndex=[{x:10,y:12}];
 let currentDirection={x:1,y:0};
 let foodPostion={x:5,y:15};
 let score=0;
+
 
 
 
@@ -157,6 +193,11 @@ function gameEngine()
 
    board.innerHTML = "";                //step:3
    // console.log(board.innerHTML)
+   if(f)
+{
+   currentDirection.x=bx;
+   currentDirection.y=by;
+}
    snakeIndex[0].y +=currentDirection.y;
    snakeIndex[0].x +=currentDirection.x;
 
@@ -177,6 +218,9 @@ function gameEngine()
       board.appendChild(food);
    
    })
+
+
+
    
 }
 
@@ -219,5 +263,6 @@ window.addEventListener('keydown',(e)=>
       
    }
 })
+
 
 }

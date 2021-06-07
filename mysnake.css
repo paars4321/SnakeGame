@@ -84,6 +84,9 @@
     display: none;
 }
 
+#button{
+    display: none;
+}
 #board{
     position: relative;
     top:10%;

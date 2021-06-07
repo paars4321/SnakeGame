@@ -24,6 +24,7 @@
     <title>SakeGame</title>
 
     <link rel="stylesheet" href="mysnake.css">
+    <link rel="stylesheet"  href="phone.css">
 </head>
 <body>
     <div id="first">
@@ -45,7 +46,21 @@
         <div id="start" onclick="start_the_game()">
             START!!
         </div>
+
+        <div id="button">
+            <div id="up"  onclick="up()"><i class="fas fa-caret-up " style="font-size: 4rem;" ></i></div>
+            
+            <div id="temp">
+            <div id="left" onclick="left()"><i class="fas fa-caret-left" style="font-size: 4rem;"></i></div>
+            <div id="center" ><i class="fas fa-circle" style="font-size: 2rem;"></i></div>
+            <div id="right" onclick="right()"><i class="fas fa-caret-right" style="font-size: 4rem;"></i></div>
+           </div>
+
+            <div id="down" onclick="down()"><i class="fas fa-caret-down" style="font-size: 4rem;"></i></div>
+        </div>
     </div>
+
+  
 </body>
 <script src="mysnake.js"></script>
 </html>
