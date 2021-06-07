@@ -1,0 +1,97 @@
+@media only screen and (min-width:0px) and (max-width:650px)
+{
+
+    #welcome {
+        position: relative;
+        top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+        /* height: 70px; */
+        font-size: 1.2rem;
+        color: #fff81b;
+        font-family: 'Alfa Slab One', cursive;
+        text-align: center;
+    }
+
+    #score {
+    top: 39px;
+    text-align: center;
+    }
+
+    #start {
+        /* position: absolute; */
+        height: 25px;
+        padding-top: 2px;
+        width: 110px;
+        font-size: 1.3rem;
+        text-align: center;
+        color: white;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        top: 62%;
+        left: 40%;
+        /* background-color: #157f58;
+        top: 50%;
+        left: 46.3%; */
+        cursor: pointer;
+        border: 3px solid black;
+    }
+
+    #button{
+        display: block;
+        height: 300px;
+        width: 300px;
+        /* border:  2px solid red; */
+        margin-top: 30%;
+        margin-left:auto;
+        margin-right: auto;
+       
+    }
+
+    #temp{
+        display: flex;
+       
+    }
+   
+    #up,#left,#down,#right,#center{
+        position: relative;
+        /* top:100%; */
+        text-align: center;
+        height: 61px;
+        width: 110px;
+        border: 2px solid rgb(29, 7, 7);
+        padding-bottom: auto;
+        padding-top: auto;
+        border-radius: 80px;
+        cursor: pointer;
+
+        background-color: white;
+    }
+
+    #left,#center,#right{
+        width: 110px;
+        margin-right: 20px;
+        padding: auto;
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+    #right{
+        margin-right: 0px;
+    }
+    #center{
+        padding-top: 20px;
+    }
+
+    #up,#down{
+        height: 80px;
+        width: 61px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+
+}
